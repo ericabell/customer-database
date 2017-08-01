@@ -12,7 +12,9 @@ let customerResults = customers.results;
 
 let divForContent = document.createElement('div');
 
-let customerDivData;
+let customerDivData = `
+  <h1 class="title">internal company directory</h1>
+`;
 customerResults.forEach(function(customer) {
   customerDivData += `
     <div class="customer">
