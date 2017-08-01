@@ -23,10 +23,20 @@ customerResults.forEach(function(customer) {
       <p class="customer-email">${customer.email}</p>
       <p class="customer-street">${customer.location.street}</p>
       <p class="customer-csz">${customer.location.city}, ${customer.location.state} ${customer.location.postcode}</p>
-      <p class="customer-ssn">${customer.id.value}</p>
+      <p class="customer-ssn blur">${customer.id.value}</p>
     </div>
   `
 });
 
 let divContainerForData = document.querySelector('.container');
 divContainerForData.innerHTML = customerDivData;
+
+// blur effect for SSN
+
+// document.querySelectorAll('.blur').forEach(function(e) {
+//   // console.log(e);
+//   e.addEventListener('onmouseover', function() {
+//     console.log('onmouseover');
+//     e.classList.toggle('.blur');
+//   })
+// });
