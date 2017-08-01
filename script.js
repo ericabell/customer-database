@@ -33,10 +33,18 @@ divContainerForData.innerHTML = customerDivData;
 
 // blur effect for SSN
 
-// document.querySelectorAll('.blur').forEach(function(e) {
-//   // console.log(e);
-//   e.addEventListener('onmouseover', function() {
-//     console.log('onmouseover');
-//     e.classList.toggle('.blur');
-//   })
-// });
+document.querySelectorAll('.blur').forEach(function(e) {
+  // console.log(e);
+  e.addEventListener('mouseenter', function() {
+    console.log('mouseenter');
+    this.classList.toggle('blur');
+  })
+});
+
+document.querySelectorAll('.blur').forEach(function(e) {
+  // console.log(e);
+  e.addEventListener('mouseleave', function() {
+    console.log('mouseleave');
+    this.classList.toggle('blur');
+  })
+});
